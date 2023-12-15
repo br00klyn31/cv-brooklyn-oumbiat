@@ -1,0 +1,71 @@
+/*
+element {
+    propriete: valeur;
+}
+
+
+element (body, p, div) ce sont les balises
+.ma-class (représenté dans le HTML : class="ma-class")
+#mon-id (représenté dans le HTML : id="mon-id")
+
+*/
+body {
+  background-color: aliceblue;
+  box-sizing: border-box;
+}
+
+h2 {
+  padding: 10px;
+  background-color: #af6259;
+
+  border-radius: 20px;
+}
+
+.titre-page {
+  color: #af6259;
+}
+h3 {
+  color: cadetblue;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-image: url("icone-etoile.jpeg");
+  background-size: 10px 10px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  flex: 1;
+}
+
+li {
+  list-style: none;
+}
+
+header img {
+  border-radius: 100vmax;
+  aspect-ratio: 1/0;
+  object-fit: auto;
+}
+
+/* RESPONSIVE POURL LES TABLETTES ET PLUS */
+/* On créer un point d'arret avec @media () */
+@media screen and (min-width: 720px) {
+  .content {
+    flex-direction: row;
+  }
+}
